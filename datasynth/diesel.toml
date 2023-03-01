@@ -3,6 +3,7 @@
 
 [print_schema]
 file = "src/schema.rs"
-
-[migrations_directory]
-dir = "migrations"
+filter = {except_tables = [
+    "api_exports_key_parameters",
+    "pack_access_tickets"
+]}

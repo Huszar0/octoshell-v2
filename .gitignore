@@ -50,3 +50,6 @@ docs/build
 node_modules/.yarn-integrity
 
 config/secrets.yml
+
+datasynth/.cargo
+datasynth/target
