@@ -41,7 +41,7 @@ div class="row"
 = render "core/admin/projects/members"
 = render "core/admin/projects/sureties"
 
-h4 = "Заявки на ресурсы"
+h4 = t(".requests")
 - @project.requests.group_by { |r| r.created_at.year }.sort.reverse.each do |y,requests|
   li
     b =  t('.year', year: y)
@@ -52,6 +52,7 @@ h4 = "Заявки на ресурсы"
           b = "No. #{i}"
       -r.fields.map do |f|
         li = f.quota_kind.name + " " + f.value.to_s + " " + f.quota_kind.measurement
+      li = t('.cluster', cluster: r.cluster)
 
 h4 = t(".marks_title")
 - @project.reports.sort_by { |r| r.session.started_at&.year || 0 }.reverse.each do |r|

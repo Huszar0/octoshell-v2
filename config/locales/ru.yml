@@ -188,7 +188,7 @@ ru:
         no_found: Нет категорий для опцийW
     users:
       find_similar:
-        title: "Похожие пользователи на пользователя %{name}(%{email})"
+        title: "Пользователи с именем %{name} или почтой %{email}"
         full_name: "ФИО"
         email: Email
       edit:
@@ -215,7 +215,7 @@ ru:
         present: есть
         reg_date: Дата регистрации
         unblock_user: Возобновить доступ
-        show_similar: Показать похожих пользователей
+        show_similar: Показать пользователей с тем же именем или почтой
       table:
         no_employment:
           html: >-
